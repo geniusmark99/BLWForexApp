@@ -1,0 +1,249 @@
+body {
+display: flex;
+height: 100vh;
+justify-content: center;
+background-image: url('../images/auth-bg.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+overflow: auto;
+}
+
+.form-content {
+/* height: calc(100vh - 20%); */
+width: calc(100%);
+display: flex;
+flex-direction: column;
+gap: 30px 0;
+}
+
+.form-top-content {
+height: 100px;
+
+}
+
+.form-top-content img {
+width: 30%;
+}
+
+.form-bottom-content {
+height: 400px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.innner-form-bottom-content {
+width: var(--form-bottom-w, 280px);
+display: flex;
+justify-content: center;
+}
+
+
+.form-main-container {
+background-color: #000E2D;
+/* background-color: var(var(--custom-bg),#222642); */
+display: flex;
+flex-direction: column;
+gap: 30px 0;
+height: inherit;
+width: 100%;
+border-top: 5px solid #EA2440;
+color: #fff;
+padding: 20px;
+}
+
+.back-arrow img {
+width: var(--back-wh, 20px);
+height: var(--back-wh, 20px);
+}
+
+.form-main-inner-container {
+display: flex;
+flex-direction: column;
+gap: 30px 0;
+}
+
+#forgot-password-desc {
+word-spacing: 2px;
+font-size: 1rem;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-main-inner-container .google-signup-link {
+align-items: center;
+display: flex;
+justify-content: space-between;
+text-decoration: none;
+color: #fff;
+background-color: #282C49;
+border-radius: 5px;
+padding: 6px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.google-signup-sub {
+color: #ccc;
+}
+
+.google-signup-sub img {
+--wh: 20px;
+width: var(--wh);
+height: var(--wh);
+}
+
+.form-main-inner-container form#form-input {
+display: flex;
+flex-direction: column;
+width: 100%;
+gap: 20px 0;
+justify-content: center;
+}
+
+
+form#form-input label.extra-label {
+align-items: center;
+gap: 0 10px;
+display: flex;
+width: inherit;
+}
+
+label.extra-label .btn-password {
+border: none;
+cursor: pointer;
+background-color: transparent;
+}
+
+.btn-password svg {
+width: 20px;
+height: 20px;
+fill: #7479a9;
+}
+
+
+.btn-password:hover svg {
+fill: #7479a9;
+}
+
+form#form-input label.extra-label input {
+width: 80%;
+}
+
+
+
+form#form-input input {
+padding: 10px 8px;
+color: #fff;
+font-size: var(--input-ft-sz, 14px);
+background-color: #282C49;
+border: 2px solid transparent;
+transition: border-color 1s;
+border-radius: 5px;
+
+}
+
+form#form-input input:focus {
+outline: none;
+background-color: #282C49;
+border-color: #3f456d;
+}
+
+.form-input-bottom {
+align-content: center;
+display: flex;
+justify-content: space-between;
+margin-top: 20px;
+font-size: var(--ft-sz, 12px);
+white-space: nowrap;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.remember-me {
+color: #ccc;
+}
+
+.remember-me input[type=checkbox]{
+border-radius: 0.25rem;
+--tw-border-opacity: 1;
+border-color: rgb(209 213 219 / var(--tw-border-opacity));
+--tw-border-opacity: 1;
+border-color: rgb(209 213 219 / var(--tw-border-opacity));
+--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);
+--tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
+}
+
+.remember-me > input[type=checkbox]:checked{
+background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+border-color: transparent;
+background-color: currentColor;
+background-size: 100% 100%;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.remember-me > input[type=checkbox]:checked:focus {
+border-color: transparent;
+background-color: currentColor;
+--tw-ring-opacity: 1;
+--tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity));
+}
+
+.form-input-bottom a {
+text-decoration: none;
+color: #455692;
+white-space: nowrap;
+}
+
+.form-input-bottom a:hover {
+cursor: pointer;
+text-decoration: underline;
+}
+
+.form-btn-submit-cont {
+display: flex;
+justify-content: center;
+}
+
+.form-btn-submit {
+margin-top: 40px;
+width: 50%;
+background-color: #EA2440;
+cursor: pointer;
+color: #fff;
+padding: 12px 8px;
+border: none;
+border-radius: 10px;
+font-size: 15px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (min-width:500px) {
+
+.innner-form-bottom-content {
+--form-bottom-w: 400px;
+}
+
+.form-top-content img {
+width: 120px;
+}
+
+.form-input-bottom {
+--ft-sz: 16px;
+}
+
+form#form-input input {
+--input-ft-sz: 16px;
+}
+}
+
+@media screen and (min-width:900px) {
+.innner-form-bottom-content {
+--form-bottom-w: 500px;
+}
+
+.google-signup-sub img {
+--wh: 30px;
+}
+}
